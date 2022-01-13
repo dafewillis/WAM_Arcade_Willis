@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="moleStyle.css">
     <link rel="stylesheet" href="http://fonts.cdnfonts.com/css/homer-simpson-revised">
-    <script src="app.js" defer></script>
+    <script src="mole.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -15,17 +15,17 @@
 
     <div class="simpsonTitle">
         <img class="homerPic" src="https://s.pngkit.com/png/small/41-415856_homer-simpson-tomodachi-life-qr-code-homer-simpson.png">
-        <h1>Bash Mr. Burns!</h1>
-        <div class="score">0</div>
+        <h1>Bash Mr. Burns! <span class="score">0</span>
+        </h1>
     </div>
 
     <div class="startAndtimer">
         <div class="startButton">
-            <button onclick="beginGame()">Start (Release the Hounds!)</button>
+            <button onclick="gameOn()">Start - Release the Hounds!</button>
         </div>
-        <div class="countdownContainer">
-            <div id="timer">25</div> seconds
-        </div>
+        <!-- <div class="countdownContainer">
+            <div id="timer">15</div> seconds
+        </div> -->
     </div>
 
     <div class="gameArea">
