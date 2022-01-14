@@ -1,5 +1,5 @@
 const reactors = document.querySelectorAll('.reactor'); //creating variable that's a bucket for all my reactors
-const scoring = document.querySelectorAll('.score') //creating variable for my score container
+const scoring = document.querySelector('.score') //creating variable for my score container
 const montgomeries = document.querySelectorAll('.montgomery') //creating variable that's a bucket for all my montgomeries
 
 let lastReactor;
@@ -39,11 +39,11 @@ function gameOn() {
     setTimeout(() => gameOver = true, 15000);
 }
 
-function thwack(e) {
+function whack(e) {
     if(!e.isTrusted) return;
     score++;
     this.classList.remove('up');
     scoring.textContent = score;
 }
 
-montgomeries.forEach(montgomery => montgomery.addEventListener('click', thwack));
+montgomeries.forEach(montgomery => montgomery.addEventListener('click', whack));
